@@ -45,6 +45,9 @@ target 'UnicoModuleExample' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
+  pod 'react-native-unico-module', :path => '../..'
+  pod 'unicocheck-ios'
+
   target 'UnicoModuleExampleTests' do
     inherit! :complete
     # Pods for testing

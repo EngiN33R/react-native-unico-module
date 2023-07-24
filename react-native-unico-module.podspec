@@ -21,6 +21,7 @@ Pod::Spec.new do |s|
   if respond_to?(:install_modules_dependencies, true)
     install_modules_dependencies(s)
   else
+  s.dependency "unicocheck-ios"
   s.dependency "React-Core"
 
   # Don't install the dependencies when we run `pod install` in the old architecture.
